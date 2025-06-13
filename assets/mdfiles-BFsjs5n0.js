@@ -4737,7 +4737,7 @@ category: "DEVELOPER NEWS"\r
 date: "2025-06-09"\r
 slug: "dmp-25-aman-week01"\r
 author: "Aman Chadha"\r
-description: "GSoC '25 Contributor working on retrieval-augmented generation for Music Blocks"\r
+description: "DMP '25 Contributor working on retrieval-augmented generation for Music Blocks"\r
 tags: "dmp25,musicblocks,rag,week01"\r
 image: "assets/Images/c4gt_DMP.png"\r
 ---\r
@@ -4755,7 +4755,7 @@ image: "assets/Images/c4gt_DMP.png"\r
 ## Goals for This Week\r
 \r
 - Develop a Retrieval-Augmented Generation (RAG) model using the core files of Music Blocks to provide context-aware responses.\r
-- Collect and parse \`.po\` files, extracting \`msgid\` and \`msgstr\` pairs along with comments showing usage in source files.\r
+- Collect and parse .po files, extracting msgid and msgstr pairs along with comments showing usage in source files.\r
 - Use AST parsing (with Babel) to gather metadata chunks from source files to improve retrieval relevance.\r
 \r
 ---\r
@@ -4765,9 +4765,9 @@ image: "assets/Images/c4gt_DMP.png"\r
 1. **RAG Model Development**  \r
    - Started working on building a RAG model focused on the core Music Blocks files. This aims to give the model context about what Music Blocks is and how it functions, improving answer relevance.\r
    \r
-2. **Metadata Extraction from \`.po\` Files**  \r
-   - Successfully collected \`msgid\` and \`msgstr\` pairs from translation files.\r
-   - Parsed comments above the translations to identify which files use each \`msgstr\`.\r
+2. **Metadata Extraction from .po Files**  \r
+   - Successfully collected msgid and msgstr pairs from translation files.\r
+   - Parsed comments above the translations to identify which files use each msgstr.\r
    \r
 3. **AST Parsing and Chunking**  \r
    - Used Babel to parse Music Blocks source files and extract relevant code chunks.\r
@@ -4777,7 +4777,7 @@ image: "assets/Images/c4gt_DMP.png"\r
 \r
 ## Challenges & How I Overcame Them\r
 \r
-- **Challenge:** Parsing complex \`.po\` files with varied comment styles and ensuring correct association of usage metadata.  \r
+- **Challenge:** Parsing complex .po files with varied comment styles and ensuring correct association of usage metadata.  \r
   **Solution:** Created robust parsing scripts to handle different comment formats and verified chunk associations manually on sample files.\r
 \r
 - **Challenge:** Extracting meaningful code chunks via AST parsing while maintaining useful granularity.  \r
@@ -4796,7 +4796,7 @@ image: "assets/Images/c4gt_DMP.png"\r
 ## Next Week’s Roadmap\r
 \r
 - Build a demo to showcase the RAG model's ability to answer Music Blocks-related queries with context from core files.\r
-- Begin integrating metadata-enriched \`.po\` file chunks into the RAG database for improved translation string retrieval.\r
+- Begin integrating metadata-enriched .po file chunks into the RAG database for improved translation string retrieval.\r
 - Optimize chunking and metadata tagging strategy based on initial demo feedback.\r
 \r
 ---\r
@@ -4818,7 +4818,7 @@ Thanks to my mentors and the DMP community for their guidance and support throug
 ## Connect with Me\r
 \r
 - GitHub: [@aman-chadha](https://github.com/ac-mmi)  \r
-- Gmail: [aman.chadha@example.com](mailto:aman.chadha.mmi@gmail.com)  \r
+- Gmail: [aman.chadha.mmi@gmail.com](mailto:aman.chadha.mmi@gmail.com)  \r
 \r
 ---\r
 `,na=Object.freeze(Object.defineProperty({__proto__:null,default:Ae},Symbol.toStringTag,{value:"Module"})),Ce=`---
