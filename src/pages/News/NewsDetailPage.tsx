@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import ShareModal from '@/components/ShareModal';
 import { Share2 } from 'lucide-react';
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams, useNavigate, useLocation } from 'react-router-dom';
 import { getPostBySlug, Post } from '@/utils/posts-utils';
 import { motion } from 'framer-motion';
 import Header from '@/sections/Header';
@@ -13,6 +13,7 @@ const NewsDetailPage: React.FC = () => {
 
   const { slug, category } = useParams<{ slug?: string; category?: string }>();
   const navigate = useNavigate();
+  const location = useLocation();
   const [post, setPost] = useState<Post | null>(null);
   const [isLoading, setIsLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
@@ -85,12 +86,15 @@ const NewsDetailPage: React.FC = () => {
   });
 
   const handleGoBack = useCallback(() => {
-    if (category) {
-      navigate(`/news/${category}`);
-    } else {
-      navigate('/news/community-news');
-    }
-  }, [navigate, category]);
+    const search = location.search || '';
+    // Prefer the category in the URL. If absent, derive from the post's category; fallback to 'all'.
+    const derivedCategory = category
+      ? category
+      : post?.category
+        ? post.category.toLowerCase().replace(/\s+/g, '-')
+        : 'all';
+    navigate(`/news/${derivedCategory}${search}`);
+  }, [navigate, category, location.search, post?.category]);
 
   const closeImageModal = useCallback(() => {
     setModalImage(null);

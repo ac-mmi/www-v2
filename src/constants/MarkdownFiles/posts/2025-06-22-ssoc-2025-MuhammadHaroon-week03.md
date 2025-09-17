@@ -6,7 +6,7 @@ date: "2025-06-22"
 slug: "2025-06-22-ssoc-25-MuhammadHaroon-week03"
 author: "@/constants/MarkdownFiles/authors/muhammad-haroon.md"
 tags: "ssoc25,sugarlabs,week03,GenAI,MusicBlocks,Music"
-image: "assets/Images/GSOC.png"
+image: "assets/Images/GSOC.webp"
 ---
 
 <!-- markdownlint-disable -->
@@ -16,7 +16,7 @@ image: "assets/Images/GSOC.png"
 **Project:** [Generative AI Instrument Sample Generation for Music Blocks](https://github.com/sugarlabs/GSoC/blob/master/Ideas-2025.md#Generative-AI-Instrument-Sample-Generation-for-Music-Blocks)  
 **Mentors:** [Walter Bender](https://github.com/walterbender), [Sumit Srivastava](https://github.com/sum2it)  
 **Assisting Mentors:** [Devin Ulibarri](https://github.com/pikurasa)  
-**Reporting Period:** 2025-06-09 - 2025-06-15  
+**Reporting Period:** 2025-06-16 - 2025-06-22  
 
 ---
 
